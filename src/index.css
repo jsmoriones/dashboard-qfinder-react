@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    scrollbar-width: none;
+    scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 14px;
+    border: 3px solid var(--primary);
+}
+
+.menu-button.selected {
+    background-color: white;
+   
+}
+
+@media screen and (max-width: 768px){
+.tabla-responsive thead{
+display: none;
+}
+
+.tabla-responsive, .tabla-responsive tbody, .tabla-responsive tr, .tabla-responsive td{
+display: block;
+width: 100%;
+}
+.tabla-responsive tbody tr th, .tabla-responsive tbody tr td {
+    padding: .5rem 0;
+}
+.tabla-responsive tbody tr{
+padding: 0 2rem;
+border-bottom: 1px solid #000;
+margin-bottom: 2rem;
+}
+.tabla-responsive tbody tr td:last-child{
+display: flex;
+justify-content: flex-start;
+}
+.tabla-responsive tbody tr:nth-child(odd){
+background-color: rgba(0,0,0,.1);
+}
+.tabla-responsive tbody tr td{
+position: relative;
+text-align: right;
+}
+.tabla-responsive tbody tr td:before{
+content: attr(title) ':';
+width: 50%;
+padding-left: 15px;
+font-size: 15px;
+font-weight: bold;
+color: #000;
+text-align: left;
+}
+.tabla-responsive tbody tr td:last-child:before{
+    content: " ";
+    width: 0;
+}
+.tabla-responsive tbody tr td:last-child{
+    justify-content: center;
+}
+.tabla-responsive tbody tr td {
+display: flex;
+line-height: normal;
+justify-content: space-between;
+align-items: center;
+}
+}
