@@ -5,7 +5,6 @@ import PerfilPaciente from "./pages/PerfilPaciente/PerfilPaciente";
 import TurnosAuxiliar from "./pages/TurnosAuxiliar/TurnosAuxiliar";
 import FormularioAuxiliar from "./pages/FormularioAuxiliar/FormularioAuxiliar";
 import Notas from "./pages/Notas/Notas";
-
 import Login from "./pages/Auth/Login";
 import Configuracion from "./pages/Configuraciones/Configuracion";
 import RegistroNotas from "./pages/Notas/RegistroNotas";
@@ -13,6 +12,7 @@ import RegistrarPaciente from "./pages/PerfilPaciente/RegistrarPaciente";
 import PerfilAcudiente from "./pages/PerfilAcudiente/PerfilAcudiente";
 import PerfilAuxiliar from "./pages/PerfilAuxiliar/PerfilAuxiliar";
 import Paciente from "./pages/PerfilPaciente/Paciente";
+
 function App() {
   return (
     <>
@@ -25,12 +25,12 @@ function App() {
           <Route path="/turnos-auxiliar" element={<TurnosAuxiliar />} />
           <Route path="/notas" element={<Notas />} />
           <Route path="/configuracion" element={<Configuracion />} />
-          <Route path="/registro-notas" element={<RegistroNotas />} />{/* Alejandro Falta Codigo */}
+          <Route path="/registro-notas" element={<RegistroNotas />} />
           <Route path="/registro-paciente" element={<RegistrarPaciente />} />{/* Hanz A medias */}
           <Route path="/perfil-acudiente" element={<PerfilAcudiente />} />
           <Route path="/perfil-auxiliar" element={<PerfilAuxiliar />} />
           <Route path="/pacientes" element={<Paciente />} />
-          
+
           <Route path="/login" element={<Login />} />
         </Routes>
       </div>
