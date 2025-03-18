@@ -12,6 +12,7 @@ import RegistrarPaciente from "./pages/PerfilPaciente/RegistrarPaciente";
 import PerfilAcudiente from "./pages/PerfilAcudiente/PerfilAcudiente";
 import PerfilAuxiliar from "./pages/PerfilAuxiliar/PerfilAuxiliar";
 import Paciente from "./pages/PerfilPaciente/Paciente";
+import ListadoNotas from './pages/Notas/ListadoNotas';
 
 function App() {
   return (
@@ -23,9 +24,10 @@ function App() {
           <Route path="/perfil-paciente" element={<PerfilPaciente />} />
           <Route path="/formulario-auxiliar" element={<FormularioAuxiliar />} />
           <Route path="/turnos-auxiliar" element={<TurnosAuxiliar />} />
-          <Route path="/notas" element={<Notas />} />
+          <Route path="/notas/:id" element={<Notas />} />
           <Route path="/configuracion" element={<Configuracion />} />
-          <Route path="/registro-notas" element={<RegistroNotas />} />
+          <Route path="/registro-nota" element={<RegistroNotas />} />
+          <Route path="/listado-notas" element={<ListadoNotas />} />
           <Route path="/registro-paciente" element={<RegistrarPaciente />} />{/* Hanz A medias */}
           <Route path="/perfil-acudiente" element={<PerfilAcudiente />} />
           <Route path="/perfil-auxiliar" element={<PerfilAuxiliar />} />
